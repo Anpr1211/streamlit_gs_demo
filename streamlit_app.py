@@ -18,7 +18,7 @@ import numpy as np
 st.header("Report on Clustering")
 
 # reading the dataset
-data = pd.read_csv(r"C:\Users\ankit\Downloads\test.csv\test.csv", index_col='Unnamed: 0', nrows=1000)
+data = pd.read_csv("https://raw.githubusercontent.com/Anpr1211/streamlit_gs_demo/main/test.csv", index_col='Unnamed: 0', nrows=1000)
 
 # preprocessing the dataset
 data = pd.get_dummies(data, columns=['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction'])
